@@ -1,8 +1,8 @@
 FROM ubuntu
 
-RUN apt-get update && apt-get install -y python pip git
+RUN apt-get update && apt-get install -y python python-pip git
 RUN pip install virtualenv
-COPY ../src/run.sh ~/run.sh
+COPY run.sh ~/run.sh
 
 EXPOSE 80
 
